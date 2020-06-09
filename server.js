@@ -19,6 +19,8 @@ connection.connect(err => {
     promptUser();
 });
 
+
+//start command prompt 
 const promptUser = () => {
     inquirer
         .prompt({
@@ -52,7 +54,7 @@ const promptUser = () => {
         });
 };
 
-
+//employee view
 const viewEmployees = () => {
     const query = "SELECT employee.id, employee.first_name, employee.last_name, role.title, employee.manager_id FROM employee LEFT JOIN role ON employee.role_id = role.id;";
     // add another join to match the manager ID
@@ -66,7 +68,7 @@ const viewEmployees = () => {
     });
 };
 
-
+//inquirer options
 const addElement = () => {
     inquirer
         .prompt({
@@ -93,6 +95,7 @@ const addElement = () => {
         });
 };
 
+//add department
 const addDepartment = () => {
     inquirer
         .prompt({
@@ -114,6 +117,7 @@ const addDepartment = () => {
         });
 };
 
+//create new role
 const addRole = () => {
     let departments = [];
 
@@ -154,7 +158,7 @@ const addRole = () => {
             })
     });
 };
-
+//add new employee
 const addEmployee = () => {
 
     connection.query(`SELECT * FROM employee`, (err, data) => {
@@ -208,7 +212,7 @@ const addEmployee = () => {
     });
 };
 
-
+//update roles 
 const updateRoles = () => {
 
     connection.query(`SELECT * FROM employee`, (err, data) => {
@@ -252,8 +256,7 @@ const updateRoles = () => {
         });
     })
 }
-
-
+//Delete empployee from table
 const deleteEmployee = () => {
     connection.query(`SELECT * FROM employee`, (err, data) => {
         if (err) throw err;
@@ -284,10 +287,3 @@ const deleteEmployee = () => {
 
     });
 }
-
-// // Start server after DB connection
-// // db.on('open', () => {
-//     app.listen(PORT, () => {
-//         console.log(`Server running on port ${PORT}`);
-//     });
-// // });

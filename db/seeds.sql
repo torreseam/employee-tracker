@@ -1,5 +1,5 @@
  USE employee_manager_db;
- 
+
 INSERT INTO department (name) VALUES ("Engineering"), ("Legal"), ("Sales"), ("Marketing"), ("Human Resources"), ("Finance"), ("Information Technology");
 INSERT INTO role (title, salary, department_id) VALUES ("Software Engineer", 150000, 1);
 INSERT INTO role (title, salary, department_id) VALUES ("Claims Lawyer", 250000, 2);
@@ -10,6 +10,7 @@ INSERT INTO role (title, salary, department_id) VALUES ("Accountant", 130000, 6)
 INSERT INTO role (title, salary, department_id) VALUES ("Support Desk Manager", 70000, 7);
 INSERT INTO role (title, salary, department_id) VALUES ("Data Engineer", 90000, 1);
 INSERT INTO role (title, salary, department_id) VALUES ("Account Manager", 85000, 3);
+
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ("Kevin", "Smeraglio", 1, NULL);
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ("Barry", "Bonds", 3, NULL);
