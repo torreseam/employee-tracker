@@ -1,6 +1,6 @@
 # Employee-Tracker
 
-![badmath](https://img.shields.io/badge/Express-JS-orange)![badmath](https://img.shields.io/badge/Technology-Node-red) ![badmath](https://img.shields.io/badge/Technology-HTML-orange) ![badmath](https://img.shields.io/badge/Technology-CSS-yellowgreen) ![badmath](https://img.shields.io/badge/Technology-NMP-brightgreen)
+![badmath](https://img.shields.io/badge/Express-JS-orange)   ![badmath](https://img.shields.io/badge/Technology-Node-red)  ![badmath](https://img.shields.io/badge/Technology-NMP-brightgreen)
 
 
 ## Description
@@ -12,7 +12,7 @@ Combined various NPMs such as inquirer, mysql and const tables functions.
   ## Table of Contents
 
   - [Installation](#installation)
-  - [Testing](#tests)
+  - [Tables](#tables)
   - [Usage](#usage)
   - [License](#license)
   - [Contributors](#contributors)
@@ -27,18 +27,18 @@ Combined various NPMs such as inquirer, mysql and const tables functions.
   - Run Command: npm require
 
 
-  ## Tests
+  ## Tables
 
-  - Insomnia API
-  ![Employee Add](.src/empAdd.PNG)
+  
+  ![Employee Add](./src/empAdd.PNG)
 
 
 
-  ![Employee Update](.src/empUpdate.PNG)
+  ![Employee Update](./src/empUpdate.PNG)
 
   
 
-  ![Employee Delete](.src/empDelete.PNG)
+  ![Employee Delete](./src/empDelete.PNG)
 
 
 
